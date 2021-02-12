@@ -16,6 +16,9 @@
 </head>
 
 <body data-spy="scroll">
+
+
+    <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">
@@ -32,22 +35,16 @@
                         <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#servicios" id="navbarDropdown" role="button"
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Servicios
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#monotributo">Alta/Liquidación Monotributo</a>
-                            <a class="dropdown-item" href="#iibb">Alta/Liquidación Ingresos Brutos</a>
-                            <a class="dropdown-item" href="#drei">Alta/Liquidación DREI</a>
-                        </div>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#otrosservicios" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Otros Servicios
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#habilitaciones"> Habilitaciones Municipales</a>
+                            <a class="dropdown-item" href="#servicios">Alta/Liquidación Monotributo</a>
+                            <a class="dropdown-item" href="#servicios">Alta/Liquidación Ingresos Brutos</a>
+                            <a class="dropdown-item" href="#servicios">Alta/Liquidación DREI</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#otros_servicios">Habilitaciones Municipales</a>
                         </div>
                     </li>
                     <li class="nav-item">
@@ -57,22 +54,112 @@
             </div>
         </div>
     </nav>
+
     <!-- Portada -->
     <header class="header">
         <div class="header-container">
-            <h1 class="title">JUAN MANUEL</h1>
+            <h1 class="title">Joaquin Basso</h1>
             <h2 class="subtitle">Servicios Contables</h2>
         </div>
     </header>
+
+
     <!-- Contenido Principal -->
-    <main class="main">
-        <h2 class="title_services">Servicios</h2> 
-        <div class="accordion" id="accordionExample">
+    <main class="main" id="servicios">
+
+        <h2 class="title_services">Servicios</h2>
+        
+        
+        <div class="container py-5">
+            <div class="row">
+
+                <div class="col-12 col-md-4">
+                    <div class="card">
+                        <div class="card-header py-5" id="headingOne">
+                            <h2 class="mb-1">
+                                <button class="btn btn-secondary btn-lg btn-block text-center collapsed" type="button"
+                                    data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                                    aria-controls="collapseOne">
+                                    Alta y Liquidación de Monotributo
+                                </button>
+                            </h2>
+                        </div>
+        
+                        <div id="collapseOne" class="collapse  show" aria-labelledby="headingOne"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                <div class="container">
+                                    <p>Para comenzar a ejercer una actividad deberías darte de alta en <b>Monotributo</b>, el
+                                        cual es un impuesto nacional que se abona mensualmente. Dentro de los conceptos del
+                                        impuestos se encuentra el aporte a jubilación y a obra social.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="card" id="iibb">
+                        <div class="card-header py-5" id="headingTwo">
+                           
+                            <h2 class="mb-1">
+                                <button class="btn btn-secondary btn-lg btn-block text-center collapsed" type="button"
+                                    data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                                    aria-controls="collapseTwo">
+                                    Alta y Liquidación de Ingresos Brutos
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseTwo" class="collapse  show" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <div class="container">
+                                    <p>Junto con el Monotributo debes inscribirte en <b>Ingresos Brutos</b>, un impuesto
+                                        provincial que también se abona mensualmente por el sistema de categorías. Para el alta
+                                        veremos tu margen de facturación y así determinaremos en que categoría te encontras.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="card" id="drei">
+                        <div class="card-header py-5" id="headingThree">
+                            <h2 class="mb-0">
+                                <button class="btn btn-secondary btn-lg btn-block text-center collapsed" type="button"
+                                    data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                                    aria-controls="collapseThree">
+                                    Alta y Liquidación de DREI
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseThree" class="collapse show" aria-labelledby="headingThree" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <div class="container">
+                                    <p>Si tenés un local en la ciudad de Rosario debes aportar el <b>Derecho de Registro e
+                                            Inspección</b>. Dependiendo de la actividad que desarrolles podes darte de alta en
+                                        el régimen simplificado o en el régimen general. Esto lo veremos a la hora de dar el
+                                        alta.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="accordion d-none" id="accordionExample">
+
+            <!-- MONOTRIBUTO -->
+            <div id="monotributo"></div>
+
             <div class="card">
-                <div class="card-header" id="headingOne">
-                    <scroll-container>
-                        <scroll-page id="monotributo"></scroll-page>
-                    </scroll-container>
+                <div class="card-header py-5" id="headingOne">
                     <h2 class="mb-1">
                         <button class="btn btn-secondary btn-lg btn-block text-center collapsed" type="button"
                             data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
@@ -94,11 +181,12 @@
                     </div>
                 </div>
             </div>
-            <div class="card">
-                <div class="card-header" id="headingTwo">
-                    <scroll-container>
-                        <scroll-page id="iibb"></scroll-page>
-                    </scroll-container>
+
+
+            <!-- INGRESOS BRUTOS -->
+            <div class="card" id="iibb">
+                <div class="card-header py-5" id="headingTwo">
+                   
                     <h2 class="mb-1">
                         <button class="btn btn-secondary btn-lg btn-block text-center collapsed" type="button"
                             data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
@@ -118,11 +206,10 @@
                     </div>
                 </div>
             </div>
-            <div class="card">
-                <div class="card-header" id="headingThree">
-                    <scroll-container>
-                        <scroll-page id="drei"></scroll-page>
-                    </scroll-container>
+
+            <!-- DREI -->
+            <div class="card" id="drei">
+                <div class="card-header py-5" id="headingThree">
                     <h2 class="mb-0">
                         <button class="btn btn-secondary btn-lg btn-block text-center collapsed" type="button"
                             data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
@@ -143,61 +230,74 @@
                     </div>
                 </div>
             </div>
+
         </div>
-        <h2 class="title_oservices">Otros Servicios</h2>
-        <div class="card">
-            <div class="card-header" id="headingFour">
-                <scroll-container>
-                    <scroll-page id="habilitaciones"></scroll-page>
-                </scroll-container>
-                <h2 class="mb-0">
-                    <button class="btn btn-secondary btn-lg btn-block text-center collapsed" type="button"
-                        data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
-                        aria-controls="collapseFour">
-                        Gestoría para Habilitaciones Municipales
-                    </button>
-                </h2>
-            </div>
-            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-                <div class="card-body" id="habilitaciones">
-                    <div class="container">
-                        <p>Para obtener tu <b>local habilitado</b> en Rosario, debes realizar un serie de trámites y presentaciones en las cuales nosotros te podemos ayudar. En base a nuestra experiencia y el conocimiento de los requisitos de la Municipalidad de Rosario realizamos la habilitación en tiempos muy cortos.
-                        </p>
+
+
+
+        <h2 class="title_oservices" id="otros_servicios">Otros Servicios</h2>
+
+        <!-- HABILITACIONES -->
+        <div class="container py-5">
+            <div class="card" id="habilitaciones">
+                <div class="card-header" id="headingFour">
+    
+                    <h2 class="mb-0">
+                        <button class="btn btn-secondary btn-lg btn-block text-center collapsed" type="button"
+                            data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
+                            aria-controls="collapseFour">
+                            Gestoría para Habilitaciones Municipales
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseFour" class="collapse show" aria-labelledby="headingFour" data-parent="#accordionExample">
+                    <div class="card-body" id="habilitaciones">
+                        <div class="container">
+                            <p>Para obtener tu <b>local habilitado</b> en Rosario, debes realizar un serie de trámites y presentaciones en las cuales nosotros te podemos ayudar. En base a nuestra experiencia y el conocimiento de los requisitos de la Municipalidad de Rosario realizamos la habilitación en tiempos muy cortos.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        </div>
+
     </main>
 
     <!-- Contacto -->
-     <h2 class="title_contacto" id="contacto">Contacto</h2>
+    <h2 class="title_contacto" id="contacto">Contacto</h2>
     <div class="container py-4">
-        <form>
+        <form action="/envio.php" method="POST">
             <div class="form-group">
                 <label for="exampleFormControlInput1">Nombre</label>
-                <input type="name" class="form-control" id="nombre">
+                <input name="name" type="name" class="form-control" id="nombre">
             </div>
             <div class="form-group">
                 <label for="exampleFormControlInput1">Email</label>
-                <input type="email" class="form-control" id="mail" placeholder="juanperez@ejemplo.com">
+                <input name="email" type="email" class="form-control" id="mail" placeholder="juanperez@ejemplo.com">
             </div>
             <div class="form-group">
                 <label for="exampleFormControlInput1">Teléfono</label>
-                <input type="tel" class="form-control" id="telephone" required>
+                <input name="phone" type="tel" class="form-control" id="telephone" required>
             </div>
             <div class="form-group">
                 <label for="exampleFormControlTextarea1">Mensaje</label>
-                <textarea class="form-control" id="mensaje" rows="3" required></textarea> 
+                <textarea name="message" class="form-control" id="mensaje" rows="3" required></textarea> 
             </div>
-            <button type="submit" class="boton-enviar btn btn-secondary">Enviar</button>
+
+            <div class="boton_container">
+                <button type="submit" class="boton_container--btn btn btn-secondary">Enviar</button>
+            </div>
         </form>
     </div>
+
+
+    <footer class="footer">
+        <p>Copyright © 2020 | developed by <a href="https://athomic.com.ar" target="_blank">athomic</a></p>
+    </footer>
 
     <!-- JQuery -->
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
     <!-- Bootstrap JS -->
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
