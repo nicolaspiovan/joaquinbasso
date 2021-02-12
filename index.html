@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nicolás Piován">
+    <meta name="description" content="Joaquín Basso servicios contables">
+    <title>Joaquín Basso | Servicios Contables</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Mi CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body data-spy="scroll">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <span class="titles1 ria text-right align-middle"> Joaquín Basso | Servicios contables</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-itpem">
+                        <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#servicios" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Servicios
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#monotributo">Alta/Liquidación Monotributo</a>
+                            <a class="dropdown-item" href="#iibb">Alta/Liquidación Ingresos Brutos</a>
+                            <a class="dropdown-item" href="#drei">Alta/Liquidación DREI</a>
+                        </div>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#otrosservicios" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Otros Servicios
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#habilitaciones"> Habilitaciones Municipales</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Portada -->
+    <header class="header">
+        <div class="header-container">
+            <h1 class="title">Joaquín Basso</h1>
+            <h2 class="subtitle">Servicios Contables</h2>
+        </div>
+    </header>
+    <!-- Contenido Principal -->
+    <main class="main">
+        <h2 class="title_services">Servicios</h2> 
+        <div class="accordion" id="accordionExample">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <scroll-container>
+                        <scroll-page id="monotributo"></scroll-page>
+                    </scroll-container>
+                    <h2 class="mb-1">
+                        <button class="btn btn-secondary btn-lg btn-block text-center collapsed" type="button"
+                            data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                            aria-controls="collapseOne">
+                            Alta y Liquidación de Monotributo
+                        </button>
+                    </h2>
+                </div>
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                    data-parent="#accordionExample">
+                    <div class="card-body">
+                        <div class="container">
+                            <p>Para comenzar a ejercer una actividad deberías darte de alta en <b>Monotributo</b>, el
+                                cual es un impuesto nacional que se abona mensualmente. Dentro de los conceptos del
+                                impuestos se encuentra el aporte a jubilación y a obra social.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <scroll-container>
+                        <scroll-page id="iibb"></scroll-page>
+                    </scroll-container>
+                    <h2 class="mb-1">
+                        <button class="btn btn-secondary btn-lg btn-block text-center collapsed" type="button"
+                            data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                            aria-controls="collapseTwo">
+                            Alta y Liquidación de Ingresos Brutos
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <div class="container">
+                            <p>Junto con el Monotributo debes inscribirte en <b>Ingresos Brutos</b>, un impuesto
+                                provincial que también se abona mensualmente por el sistema de categorías. Para el alta
+                                veremos tu margen de facturación y así determinaremos en que categoría te encontras.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <scroll-container>
+                        <scroll-page id="drei"></scroll-page>
+                    </scroll-container>
+                    <h2 class="mb-0">
+                        <button class="btn btn-secondary btn-lg btn-block text-center collapsed" type="button"
+                            data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                            aria-controls="collapseThree">
+                            Alta y Liquidación de DREI
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <div class="container">
+                            <p>Si tenés un local en la ciudad de Rosario debes aportar el <b>Derecho de Registro e
+                                    Inspección</b>. Dependiendo de la actividad que desarrolles podes darte de alta en
+                                el régimen simplificado o en el régimen general. Esto lo veremos a la hora de dar el
+                                alta.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h2 class="title_oservices">Otros Servicios</h2>
+        <div class="card">
+            <div class="card-header" id="headingFour">
+                <scroll-container>
+                    <scroll-page id="habilitaciones"></scroll-page>
+                </scroll-container>
+                <h2 class="mb-0">
+                    <button class="btn btn-secondary btn-lg btn-block text-center collapsed" type="button"
+                        data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
+                        aria-controls="collapseFour">
+                        Gestoría para Habilitaciones Municipales
+                    </button>
+                </h2>
+            </div>
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                <div class="card-body" id="habilitaciones">
+                    <div class="container">
+                        <p>Para obtener tu <b>local habilitado</b> en Rosario, debes realizar un serie de trámites y presentaciones en las cuales nosotros te podemos ayudar. En base a nuestra experiencia y el conocimiento de los requisitos de la Municipalidad de Rosario realizamos la habilitación en tiempos muy cortos.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+
+    <!-- Contacto -->
+     <h2 class="title_contacto" id="contacto">Contacto</h2>
+    <div class="container py-4">
+        <form>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Nombre</label>
+                <input type="name" class="form-control" id="nombre">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Email</label>
+                <input type="email" class="form-control" id="mail" placeholder="juanperez@ejemplo.com">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Teléfono</label>
+                <input type="tel" class="form-control" id="telephone" required>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Mensaje</label>
+                <textarea class="form-control" id="mensaje" rows="3" required></textarea> 
+            </div>
+            <button type="submit" class="boton-enviar btn btn-secondary">Enviar</button>
+        </form>
+    </div>
+
+    <!-- JQuery -->
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
