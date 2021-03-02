@@ -22,10 +22,13 @@
     flex-direction: column;
     
 }
+.title{
+    text-transform: uppercase;
+    font-weight: bolder;
+}
 .title,.subtitle {
     color: rgb(255, 218, 218);
     font-size: 50px;
-    
 }
 .title_services {
     background-color:rgba(134, 34, 34, 0.75);
@@ -99,4 +102,12 @@
 }
 .footer a:hover{
     text-decoration: underline;
+}
+
+.contactinfo__container{
+    height: 40%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
 }
