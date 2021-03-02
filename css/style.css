@@ -4,6 +4,10 @@
     scroll-behavior: smooth;
 
 }
+.navbar .dropdown-item:hover{
+    background-color: #a45959;
+    color: white;
+}
 .header {
     min-height: 100vh;
     background-image: url('../img/compus.jpg'); 
