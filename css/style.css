@@ -113,6 +113,14 @@
     text-decoration: underline;
 }
 
+.contact__container{
+    background-attachment: fixed; 
+    background-position: center; 
+    background-size: cover; 
+    background-image:  linear-gradient(90deg, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0.5) 100%),url('../img/cafe.jpg');
+    padding: 80px 20px !important;
+
+}
 .contactinfo__container{
     height: 40%;
     display: flex;
